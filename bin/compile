@@ -3,3 +3,5 @@ echo "-----&gt; This is empty build pack"
 for i in $*; do
    echo $i
 done
+
+export FOO="Hey, this variable is set by buildpack!!"

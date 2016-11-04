@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 echo "This is detect of empty buildpatck."
 
-# exit 0
-# To make it sure that it is called, exit 1
-exit 1
+exit 0
