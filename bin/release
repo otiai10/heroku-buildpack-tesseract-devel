@@ -1,2 +1,6 @@
 #!/usr/bin/env bash
-echo "This is bin/release."
+
+cat << EOF
+config_vars:
+  BAR: "This is bar"
+EOF
