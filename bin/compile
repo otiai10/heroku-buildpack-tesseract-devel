@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+echo "-----&gt; This is empty build pack"
+for i in $*; do
+   echo $i
+done
