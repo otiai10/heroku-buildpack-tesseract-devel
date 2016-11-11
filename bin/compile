@@ -5,4 +5,6 @@ mkdir -p $1/.profile.d
 ENVVARS=$1/.profile.d/build-env.sh
 
 echo "export FOO=\"${1}\"" >> $ENVVARS
-echo "export TESSDATA_PREFIX=\"${1}/usr/share/tesseract-ocr/\"" >> $ENVVARS
+
+mv /usr/share/tesseract-ocr $1
+echo "export TESSDATA_PREFIX=\"${1}/tesseract-ocr/\"" >> $ENVVARS
