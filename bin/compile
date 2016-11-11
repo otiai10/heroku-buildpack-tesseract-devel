@@ -6,5 +6,5 @@ ENVVARS=$1/.profile.d/build-env.sh
 
 echo "export FOO=\"${1}\"" >> $ENVVARS
 
-mv /usr/share/tesseract-ocr $1
-echo "export TESSDATA_PREFIX=\"${1}/tesseract-ocr/\"" >> $ENVVARS
+tar -zxvf tess-dir.tar.gz -C ${1}
+echo "export TESSDATA_PREFIX=\"${1}/share/tesseract-ocr/\"" >> $ENVVARS
